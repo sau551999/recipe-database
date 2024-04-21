@@ -1,0 +1,25 @@
+<div class="p-grid p-justify-center">
+    <div class="p-col-10">
+      <h2>Recipes</h2>
+      <button pButton label="Create Recipe" routerLink="/create-recipe" class="create-btn"></button>
+      <table class="recipes-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let recipe of recipes">
+            <td>{{ recipe.name }}</td>
+            <td>
+              <button pButton label="View" [routerLink]="['/view-recipe', recipe.id]" class="action-btn"></button>
+              <button pButton label="Edit" [routerLink]="['/edit-recipe', recipe.id]" class="action-btn"></button>
+              <button pButton label="Delete" (click)="deleteRecipe(recipe.id)" class="action-btn delete-btn"></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

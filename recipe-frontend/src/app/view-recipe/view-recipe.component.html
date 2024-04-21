@@ -1,0 +1,15 @@
+<div class="recipe-details" *ngIf="recipe">
+    <h2>{{ recipe.name }}</h2>
+    <div class="details">
+      <div class="section">
+        <h3>Ingredients</h3>
+        <p>{{ recipe.ingredients }}</p>
+      </div>
+      <div class="section">
+        <h3>Instructions</h3>
+        <p>{{ recipe.instructions }}</p>
+      </div>
+    </div>
+  </div>
+  <button class="back-btn" (click)="goBack()">Back</button>
+  

@@ -1,0 +1,17 @@
+<form (ngSubmit)="createRecipe()" #recipeForm="ngForm" class="recipe-form">
+    <h2>Create Recipe</h2>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="newRecipe.name" required>
+    </div>
+    <div class="form-group">
+      <label for="ingredients">Ingredients:</label>
+      <textarea id="ingredients" name="ingredients" [(ngModel)]="newRecipe.ingredients" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="instructions">Instructions:</label>
+      <textarea id="instructions" name="instructions" [(ngModel)]="newRecipe.instructions" required></textarea>
+    </div>
+    <button type="submit" [disabled]="!recipeForm.valid">Save</button>
+  </form>
+  
