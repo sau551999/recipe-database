@@ -1,0 +1,53 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  .app-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .app-header-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu-bar .p-menuitem {
+    margin-right: 5px; /* Add space between menu items */
+  }
+  
+  .menu-bar .p-menuitem:last-child {
+    margin-right: 0; /* No margin for the last item */
+  }
+  
+  /* Main Content Styles */
+  .app-main {
+    padding: 20px;
+  }
+  
+  .app-main-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Footer Styles */
+  .app-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .app-footer-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-panel {
+    width: 300px; /* Adjust as needed */
+  }
+  

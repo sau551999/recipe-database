@@ -14,6 +14,8 @@ import { CreateRecipeComponent } from './create-recipe/create-recipe.component';
 import { ViewRecipeComponent } from './view-recipe/view-recipe.component';
 import { EditRecipeComponent } from './edit-recipe/edit-recipe.component';
 import { FormsModule } from '@angular/forms';
+import { MenubarModule } from 'primeng/menubar'; 
+import { PanelModule } from 'primeng/panel';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { FormsModule } from '@angular/forms';
     InputTextModule,
     RouterModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MenubarModule,
+    PanelModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

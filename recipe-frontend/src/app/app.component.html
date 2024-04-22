@@ -1,2 +1,25 @@
-<h1>Welcome to My Recipe App</h1>
-<router-outlet></router-outlet>
+<!-- Header -->
+<header class="app-header">
+  <div class="app-header-content">
+    <!-- PrimeNG Menubar component -->
+    <p-menubar [model]="menuItems" class="menu-bar" class="spacings" ></p-menubar>
+  </div>
+</header>
+
+<!-- Main Content Area -->
+<main class="app-main">
+  <div class="app-main-content">
+    <!-- This is where routed components will be displayed -->
+    <router-outlet></router-outlet>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="app-footer">
+  <div class="app-footer-content">
+    <!-- PrimeNG Panel component -->
+    <p-panel header="Footer" [style]="{'text-align': 'center'}" class="footer-panel">
+      <p>This is the footer of the app.</p>
+    </p-panel>
+  </div>
+</footer>
